@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">VBA</string>
+    <string name="nav_drawer_open">Navigation Drawer Open</string>
+    <string name="nav_drawer_close">Navigation Drawer Close</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="tab_text_3">Tab 3</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="title_activity_user_info">UserInfo</string>
+    <string name="title_activity_ssmap_new">Map</string>
+    <string name="map_key" translatable="false">AIzaSyDfyH_dmAkXGavtKgupsoCjfNp9Q2O1-Pk</string>
+    <string name="title_activity_nav_drawer_new">NavDrawerNew</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="title_activity_test_map">Map</string>
+</resources>

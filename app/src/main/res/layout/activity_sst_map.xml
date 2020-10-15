@@ -1,0 +1,472 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawer_layout"
+    tools:context="VOMapActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/toolbar"/>
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/frame">
+
+
+            <!--searchbar-->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="55dp"
+                android:elevation="10dp"
+                android:background="@drawable/searchbar_style"
+                android:id="@+id/relLaysearchss">
+
+
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:id="@+id/magnifyicss"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/ic_searchicon"
+                    />
+
+
+                <EditText
+                    android:id="@+id/inputSearchss"
+                    android:layout_width="322dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="30dp"
+                    android:layout_toRightOf="@+id/magnifyicss"
+                    android:background="@null"
+                    android:hint="Enter Address, City or Zip Code"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    android:imeOptions="actionSearch"/>
+
+            </RelativeLayout>
+
+            <fragment
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/google_map"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="258dp"
+                    android:layout_marginEnd="31dp"
+                    android:layout_marginBottom="155dp"
+                    >
+
+
+                    <TextView
+                        android:id="@+id/distancetextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginEnd="0dp"
+                        android:background="@drawable/distancetext"
+                        android:text="Calculating distance... "
+                        android:textAlignment="center"
+                        android:visibility="invisible" />
+                </RelativeLayout>
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/infrmcrdview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="366dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="62dp"
+                    android:layout_marginTop="68dp"
+                    android:layout_marginEnd="62dp"
+                    android:layout_marginBottom="0dp"
+
+
+                    android:alpha="0.7"
+                    android:visibility="invisible"
+                    app:cardCornerRadius="30dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignStart="@+id/infrmcrdview"
+
+
+                        android:layout_alignTop="@+id/infrmcrdview"
+                        android:background="@color/green3">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+
+                            <TextView
+                                android:id="@+id/infrmtext"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_alignParentEnd="true"
+                                android:layout_marginStart="17dp"
+                                android:layout_marginTop="172dp"
+                                android:layout_marginEnd="18dp"
+                                android:gravity="bottom"
+                                android:text="A customer is requesting your help... "
+                                android:textAlignment="center"
+                                android:textColor="@color/yellow"
+                                android:textStyle="bold" />
+
+
+                            <Button
+                                android:id="@+id/cnfrmbtn"
+                                android:layout_width="95dp"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_alignParentEnd="true"
+                                android:layout_marginStart="7dp"
+                                android:layout_marginLeft="98dp"
+                                android:layout_marginTop="95dp"
+                                android:layout_marginEnd="164dp"
+                                android:layout_marginBottom="225dp"
+                                android:background="@drawable/cardbtns"
+                                android:text="Confirm"
+                                android:textSize="12dp"
+                                android:textStyle="bold" />
+
+                            <Button
+                                android:id="@+id/vbtn"
+                                android:layout_width="139dp"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_alignParentEnd="true"
+                                android:layout_marginStart="81dp"
+                                android:layout_marginLeft="140dp"
+                                android:layout_marginTop="28dp"
+                                android:layout_marginEnd="81dp"
+                                android:background="@drawable/cardbtns"
+                                android:text="View"
+                                android:textSize="12dp"
+                                android:textStyle="bold" />
+
+                            <Button
+                                android:id="@+id/cnclbtn"
+                                android:layout_width="95dp"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_alignParentEnd="true"
+                                android:layout_marginStart="169dp"
+                                android:layout_marginLeft="98dp"
+                                android:layout_marginTop="95dp"
+                                android:layout_marginEnd="0dp"
+                                android:layout_marginBottom="225dp"
+                                android:background="@drawable/cardbtns"
+                                android:text="Reject"
+                                android:textSize="12dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_alignParentEnd="true"
+                                android:layout_marginStart="0dp"
+                                android:layout_marginTop="215dp"
+                                android:layout_marginEnd="0dp"
+                                android:textAlignment="center"
+                                android:textStyle="bold"
+                                android:id="@+id/namet"
+                                android:text="nagvngadhc"
+                                android:textColor="@color/black"/>
+
+                            <TextView
+                                android:id="@+id/contactt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_alignParentEnd="true"
+                                android:layout_marginStart="0dp"
+                                android:layout_marginTop="240dp"
+                                android:layout_marginEnd="0dp"
+                                android:textAlignment="center"
+                                android:textStyle="bold"
+                                android:text="sfasd"
+                                android:textColor="@color/black"/>
+
+                            <TextView
+                                android:id="@+id/facilitiest"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_alignParentEnd="true"
+                                android:layout_marginStart="0dp"
+                                android:layout_marginTop="265dp"
+                                android:layout_marginEnd="0dp"
+                                android:textAlignment="center"
+                                android:textStyle="bold"
+                                android:text="sdvsn"
+                                android:textColor="@color/black"/>
+
+                            <TextView
+                                android:id="@+id/problemt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignTop="@+id/facilitiest"
+                                android:layout_alignParentEnd="true"
+                                android:layout_marginStart="0dp"
+                                android:layout_marginTop="25dp"
+                                android:layout_marginEnd="0dp"
+                                android:textAlignment="center"
+                                android:textStyle="bold"
+                                android:text="sdvsn"
+                                android:textColor="@color/black"/>
+
+                            <TextView
+                                android:id="@+id/othert"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignTop="@+id/problemt"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentEnd="true"
+                                android:layout_marginStart="0dp"
+                                android:layout_marginTop="35dp"
+                                android:layout_marginEnd="0dp"
+                                android:text="sdvsn"
+                                android:textAlignment="center"
+                                android:textStyle="bold"
+                                android:textColor="@color/black"/>
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+                <LinearLayout
+                    android:id="@+id/customerinfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="133dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginBottom="0dp"
+                    android:background="#65fffb"
+                    android:gravity="bottom"
+                    android:orientation="horizontal"
+                    android:visibility="invisible">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/customerimage"
+                            android:layout_width="100sp"
+                            android:layout_height="100sp"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentBottom="true"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginTop="0dp"
+                            android:layout_marginBottom="0dp"
+                            android:src="@drawable/profile" />
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="113dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginEnd="102dp"
+                            android:orientation="vertical"
+                            android:paddingLeft="10sp">
+
+                            <TextView
+                                android:id="@+id/customername"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_alignParentEnd="true"
+                                android:layout_marginEnd="0dp"
+                                android:paddingTop="20sp"
+                                android:paddingBottom="10sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/arrivalss"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_alignParentEnd="true"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginTop="9dp"
+                                android:layout_marginEnd="0dp"
+                                android:paddingTop="20sp"
+                                android:paddingBottom="10sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/customercontact"
+                                android:layout_width="wrap_content"
+                                android:layout_height="68dp"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentBottom="true"
+                                android:layout_marginEnd="0dp"
+                                android:layout_marginBottom="0dp"
+                                android:paddingTop="20sp"
+                                android:paddingBottom="10sp"
+                                android:textStyle="bold" />
+
+                            <Button
+                                android:id="@+id/finishbtn"
+                                android:layout_width="76dp"
+                                android:layout_height="28dp"
+                                android:layout_alignParentTop="true"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentBottom="true"
+                                android:layout_marginTop="87dp"
+                                android:layout_marginEnd="57dp"
+                                android:layout_marginBottom="12dp"
+                                android:background="@drawable/button_style"
+                                android:text="Finish"
+                                android:textStyle="bold"
+                                android:textColor="#ffffff"
+                                android:visibility="invisible"/>
+
+
+                        </RelativeLayout>
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/callbtn2"
+                            android:layout_width="54dp"
+                            android:layout_height="55dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentBottom="true"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginTop="13dp"
+                            android:layout_marginEnd="30dp"
+                            android:layout_marginBottom="64dp"
+                            android:background="@drawable/phn"
+                            android:gravity="end"
+                            android:paddingTop="20sp"
+                            android:paddingBottom="10sp" />
+
+                        <Button
+                            android:id="@+id/vwbtn2"
+                            android:layout_width="66dp"
+                            android:layout_height="25dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginTop="95dp"
+                            android:layout_marginEnd="18dp"
+                            android:layout_marginBottom="13dp"
+                            android:background="@drawable/layoutbg"
+                            android:text="View"
+                            android:textStyle="bold" />
+
+                   <!--     <RelativeLayout
+                            android:id="@+id/callbtn2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="320dp"
+                            android:layout_marginTop="28dp"
+                            android:layout_marginEnd="40dp"
+                            android:background="@drawable/callphone"
+                            android:gravity="end"
+                            android:paddingTop="20sp"
+                            android:paddingBottom="10sp">
+
+                            <ImageView
+
+                                android:layout_width="58dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginEnd="8dp"
+                                android:src="@drawable/ic_phone" />
+
+                        </RelativeLayout>-->
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+
+
+        </FrameLayout>
+
+
+    </LinearLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_drawer"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/header"
+        app:menu="@menu/menu_drawer"></com.google.android.material.navigation.NavigationView>
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

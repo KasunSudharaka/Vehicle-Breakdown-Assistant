@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AboutUs"
+    android:orientation="vertical"
+    android:background="@drawable/g5"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="520dp"
+        android:layout_marginBottom="0dp"
+        android:layout_gravity="bottom"
+        android:background="@drawable/g4"
+        android:id="@+id/aboutpanel"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+
+            >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="About Us"
+            android:textStyle="bold"
+            android:textSize="30dp"
+            android:textColor="@color/colorPrimarynew"
+            />
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="35px"
+                android:background="@drawable/logo122"
+                android:layout_gravity="center"/>
+
+</LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            >
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="20px"
+                android:text="Many people face difficulties getting help when their car breaks down on the road. Many of them do not have any contact number of car repair service providers and could not get help since car repair service providers could be very far from their locations. These problems are the motivations for the development of this project to help those who need it when their car breaks down along the roads.
+\n
+\n
+The system will be presented to two parties. Vehicle owners and service station owners. Since there are no active applications for this purpose, we assume that most of these parties will use this system in the future. As the use of the application increases, the network between users will increase. And users can use this application throughout Sri Lanka.
+\n
+\n
+The application helps you to find your nearby service centers as well as the fuel stations in case of emergency situations like insufficient fuel on vehicles and un-avoided incidents like puncture, break failure, doping etc. The exact locations with the distance from your place with the directions using Google Maps let you to know with ease to access with the help of this application on your smart mobiles."
+                android:textColor="#fff"
+                android:layout_marginTop="20dp"
+                android:id="@+id/aboutText"
+                />
+
+        </LinearLayout>
+
+
+
+
+
+        <!--<Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:text="Rate Later"
+            android:textStyle="bold"
+            android:background="@color/colorAccent"
+            android:layout_marginEnd="8sp"
+            android:layout_marginTop="8sp"
+            android:id="@+id/laterbtn"/>-->
+
+    </LinearLayout>
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textStyle="italic"
+        android:textSize="25dp"
+        android:text="Team"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="15dp"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:id="@+id/teamlayout"
+        >
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15px"
+            >
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="80dp"
+                android:background="@drawable/mem12"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="G.M.K.S.\nKarunasekara"
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:layout_marginTop="10dp"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15px">
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="80dp"
+                android:background="@drawable/mem2"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="D.D.D.\nNandasena"
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:layout_marginTop="10dp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20px">
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="80dp"
+                android:background="@drawable/mem3"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="H.M.C.K.\nHerath"
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:layout_marginTop="10dp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20px">
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="80dp"
+                android:background="@drawable/mem4"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="A.R.M.S.G.D\nAbeykoon"
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:layout_marginTop="10dp"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

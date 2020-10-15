@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".selct_type"
+    android:background="@drawable/bck">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Online Help"
+                    android:textSize="35dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="45dp"
+                    android:text="Watch me"
+                    android:textSize="20dp" />
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="0dp"
+                    android:src="@drawable/logo122"
+                    />
+
+            </RelativeLayout>
+
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alignmentMode="alignMargins"
+            android:columnCount="1"
+            android:columnOrderPreserved="false"
+            android:rowCount="3"
+            android:layout_marginTop="20dp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/tire1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="2"
+                app:cardCornerRadius="15dp"
+                app:cardBackgroundColor="#00e5ff"
+                app:cardElevation="6dp"
+                android:layout_marginTop="12dp"
+                android:alpha="0.95"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="83dp"
+                    android:layout_gravity="center"
+                    android:orientation="vertical"
+                    android:padding="16dp"
+
+                    />
+
+                <ImageView
+                    android:layout_width="95dp"
+                    android:layout_height="95dp"
+                    android:layout_marginLeft="100dp"
+                    android:src="@drawable/t1"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Flat Tire"
+                    android:textSize="40dp"
+                    android:layout_marginLeft="30dp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="15dp"/>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/heat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="2"
+                app:cardCornerRadius="15dp"
+                app:cardBackgroundColor="#00e5ff"
+                app:cardElevation="6dp"
+                android:layout_marginTop="12dp"
+                android:alpha="0.95">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="83dp"
+                    android:layout_gravity="center"
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    />
+
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="95dp"
+                    android:layout_marginLeft="100dp"
+                    android:src="@drawable/t2"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="OverHeating"
+                    android:textSize="40dp"
+                    android:layout_marginLeft="30dp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="15dp"/>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/battery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="2"
+                app:cardCornerRadius="15dp"
+                app:cardBackgroundColor="#00e5ff"
+                app:cardElevation="6dp"
+                android:layout_marginTop="12dp"
+                android:alpha="0.95">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="83dp"
+                    android:layout_gravity="center"
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    />
+
+                <ImageView
+                    android:layout_width="95dp"
+                    android:layout_height="95dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="110dp"
+                    android:src="@drawable/battery1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dead Battery"
+                    android:textSize="40dp"
+                    android:layout_marginLeft="30dp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="15dp"/>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/breakdown"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="2"
+                app:cardCornerRadius="15dp"
+                app:cardBackgroundColor="#00e5ff"
+                app:cardElevation="6dp"
+                android:layout_marginTop="12dp"
+                android:alpha="0.95">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="83dp"
+                    android:layout_gravity="center"
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    />
+
+                <ImageView
+                    android:layout_width="95dp"
+                    android:layout_height="95dp"
+                    android:layout_marginLeft=  "110dp"
+                    android:src="@drawable/break12"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Break Down"
+                    android:textSize="40dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="15dp"
+                    android:textStyle="bold"/>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+        </GridLayout>
+
+    </LinearLayout>
+</ScrollView>

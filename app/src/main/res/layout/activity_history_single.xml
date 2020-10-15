@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HistorySingleActivity"
+    android:orientation="vertical"
+    android:background="@drawable/test12345">
+
+
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:id="@+id/mapp" />
+
+
+
+
+    <TextView
+        android:layout_marginTop="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Service Info"
+        android:layout_marginBottom="20sp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textColor="@color/colorpressed"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20sp"
+        android:orientation="horizontal">
+
+
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/userim"
+            android:src="@mipmap/vbb_round"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20sp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Service Station:"
+            android:layout_marginBottom="20sp"
+            android:id="@+id/ssname"
+            android:textColor="#fff"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Contact Number:"
+            android:layout_marginBottom="20sp"
+            android:id="@+id/cont"
+            android:textColor="#fff"/>
+    </LinearLayout>
+
+
+
+        </LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="20sp"
+    android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Trouble:"
+            android:layout_marginBottom="20sp"
+            android:id="@+id/tro"
+            android:textColor="#fff"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Facility:"
+            android:layout_marginBottom="20sp"
+            android:id="@+id/faci"
+            android:textColor="#fff"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Date:"
+        android:layout_marginBottom="20sp"
+        android:id="@+id/date"
+        android:textColor="#fff"/>
+
+    </LinearLayout>
+
+</LinearLayout>
