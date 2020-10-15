@@ -1,7 +1,7 @@
 # Vehicle-Breakdown-Assistant
 This is an android app built to help the vehicle owners to get the help within ease whenever they face to a breakdown on the road. It is a platform to connect for both vehicle owners and the service stations. This project was done as the university's 2nd year software group project.
 
-<h3>Features <h3/>
+<h3>Features </h3>
 •	Log in system (Access as both vehicle owners and service stations)
 •	Two different interfaces for both vehicle owner and the service provider.
 •	Indicating the location of vehicle when the breakdown occurs.
