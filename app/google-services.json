@@ -1,9 +1,9 @@
 {
   "project_info": {
-    "project_number": "907424253905",
-    "firebase_url": "https://mynewproject-fd01b.firebaseio.com",
+    "project_number": "",
+    "firebase_url": "",
     "project_id": "mynewproject-fd01b",
-    "storage_bucket": "mynewproject-fd01b.appspot.com"
+    "storage_bucket": ""
   },
   "client": [
     {
@@ -15,7 +15,7 @@
       },
       "oauth_client": [
         {
-          "client_id": "907424253905-v1pb5bol0fd8arh63k99q924jld74vhb.apps.googleusercontent.com",
+          "client_id": "",
           "client_type": 3
         }
       ],
@@ -28,7 +28,7 @@
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "907424253905-v1pb5bol0fd8arh63k99q924jld74vhb.apps.googleusercontent.com",
+              "client_id": "",
               "client_type": 3
             }
           ]
